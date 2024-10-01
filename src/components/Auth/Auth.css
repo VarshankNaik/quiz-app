@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #4a90e2;
+  --text-color: #fff;
+  --background-color: #272829;
+  --container-background: #333333;
+  --input-background: #ffffff;
+  --input-text-color: #333;
+  --button-background: #ffffff;
+  --button-hover-background: rgb(52, 160, 52);
+  --button-hover-color: #000;
+  --error-color: #e74c3c;
+}
+
+.auth-container {
+  text-align: center;
+  padding: 2rem 2rem;
+  background-color: var(--background-color);
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+.form-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  color: rgb(52, 160, 52);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: var(--input-background);
+  color: var(--input-text-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: rgb(52, 160, 52);
+}
+
+.form-group input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(52, 160, 52);
+}
+
+.form-container button {
+  padding: 12px 36px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  background-color: rgb(52, 160, 52);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.form-container button:hover {
+  background-color: rgb(42, 130, 42);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-container button:focus {
+  outline: none;
+}
+
+.error-message {
+  color: var(--error-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.form-group.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-group.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-group.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}

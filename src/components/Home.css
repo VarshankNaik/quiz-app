@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #4a90e2;
+    --text-color: #fff;
+    --background-color: #272829;
+    --button-background: #ffffff;
+    --button-hover-background: #e0e0e0;
+    --button-hover-color: #3498db;
+}
+
+.home {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    color: rgb(52, 160, 52);
+
+}
+
+.home p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    line-height: 1.6;
+    color: rgb(52, 160, 52);
+}
+
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.home button {
+    padding: 12px 36px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: var(--button-background);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home button:hover {
+    background-color: rgb(52, 160, 52);
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home button:focus {
+    outline: none;
+}

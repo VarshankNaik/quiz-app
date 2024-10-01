@@ -1,0 +1,93 @@
+.user-profile-container {
+    background-color: #272829;
+    min-height: calc(100vh - 64px);
+    padding: 2rem;
+    color: #fff;
+}
+
+.user-profile-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.user-profile-content h1 {
+    color: rgb(52, 160, 52);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.user-profile-content h2 {
+    color: rgb(52, 160, 52);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-info p {
+    margin-bottom: 0.5rem;
+}
+
+.profile-form div {
+    margin-bottom: 1rem;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.profile-form input[type="email"],
+.profile-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-form textarea {
+    height: 100px;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.edit-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.save-button {
+    background-color: rgb(52, 160, 52);
+    color: white;
+}
+
+.cancel-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.quiz-scores-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-scores-list li {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+}

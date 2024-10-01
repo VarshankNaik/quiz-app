@@ -1,0 +1,78 @@
+.admin-dashboard {
+    background-color: #272829;
+    min-height: calc(100vh - 64px);
+    padding: 2rem;
+    color: #fff;
+}
+
+.admin-dashboard h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: rgb(52, 160, 52);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard .quiz-list {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admin-dashboard .quiz-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-dashboard .quiz-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.admin-dashboard .quiz-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.admin-dashboard button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    background-color: rgb(52, 160, 52);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-dashboard button:hover {
+    background-color: rgb(42, 130, 42);
+    transform: translateY(-2px);
+}
+
+.admin-dashboard button.delete {
+    background-color: #e74c3c;
+}
+
+.admin-dashboard button.delete:hover {
+    background-color: #c0392b;
+}
+
+.admin-dashboard .loading,
+.admin-dashboard .error {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.admin-dashboard .error {
+    color: #e74c3c;
+}
